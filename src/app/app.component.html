@@ -5,4 +5,9 @@
 <app-person-table [person]="person1"></app-person-table>
 <app-person-table></app-person-table>
 
-
+<h2>{{'@for'}} Directive Example</h2>
+<div class = "d-flex flex-wrap text-nowrap gap-2">
+    @for(user of users; track user) {
+        <app-person-table [person] = "user"></app-person-table>
+    }
+</div>
