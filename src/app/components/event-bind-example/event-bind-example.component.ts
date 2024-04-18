@@ -20,6 +20,7 @@ export class EventBindExampleComponent {
     this.times = 0;
   }
   onUserInput(event: Event) {
-    
+    const value = (event.target as HTMLInputElement).value;
+    this.userInput = value;
   }
 }

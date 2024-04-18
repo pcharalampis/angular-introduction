@@ -13,6 +13,8 @@ import { EventBindExampleComponent } from './components/event-bind-example/event
 })
 export class AppComponent {
 
+  event0;
+
   person0 = {
     givenName: 'Charalampis',
     surName: 'Panagiotis',
