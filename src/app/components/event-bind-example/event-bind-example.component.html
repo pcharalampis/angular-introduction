@@ -6,4 +6,14 @@
         <span>{{times}}</span>
         <button class = "btn btn-primary btn-sm flex-grow-1">+</button>
     </div>
+    <button class = "btn btn-primary btn-sm">reset</button>
+
+    <div class = "mt-2 mb-2 d-flex flex-column gap-2 w-25">
+        <input type = "text" class = "form-control"/>
+        @if(!userInput) {
+            <span class = "text-danger"> No user input!</span>
+        } @else {
+            <span class = "text-bg-info p-2 text-truncate"> {{userInput}} </span>
+        }
+    </div>
 </div>
