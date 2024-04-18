@@ -1,1 +1,8 @@
 <h1>For [example]</h1>
+<p>just listing random persons below :</p>
+
+<div class = "d-flex flex-column gap-2 text-nowrap">
+    @for(user of users; track user) {
+        <app-person-table [person] = "user"></app-person-table>
+    }
+</div>

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { Person } from 'src/app/shared/interfaces/person';
+import { PersonTableComponent } from "../person-table/person-table.component";
 
 @Component({
-  selector: 'app-for-directive-example',
-  standalone: true,
-  imports: [],
-  templateUrl: './for-directive-example.component.html',
-  styleUrl: './for-directive-example.component.css'
+    selector: 'app-for-directive-example',
+    standalone: true,
+    templateUrl: './for-directive-example.component.html',
+    styleUrl: './for-directive-example.component.css',
+    imports: [PersonTableComponent]
 })
 export class ForDirectiveExampleComponent {
   users: Person[] = [
