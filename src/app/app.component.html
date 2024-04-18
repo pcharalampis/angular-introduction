@@ -8,22 +8,15 @@
         </nav>
 
         <div class = "d-flex flex-row gap-2">
-            <div class = "d-flex flex-column text-nowrap bg-light p-2">
+            <!-- <div class = "d-flex flex-column text-nowrap bg-light p-2">
                 <span role = "button" routerLink = "component-input-example">Component Input [example]</span>
                 <span role = "button" routerLink = "for-directive">{{"for"}} Directive [example]</span>
                 <span role = "button" routerLink = "event-bind-example">Event Binding [example]</span>
-            </div>
+            </div> -->
+            <app-list-group-menu></app-list-group-menu>
             <div class = "flex-group-1 p-2 text-nowrap">
                 <router-outlet></router-outlet>
             </div>
         </div>
     </div>
-
-
-    <!-- <div class = "container">
-        <app-person-table [person]="person0"></app-person-table>
-        <app-person-table></app-person-table>
-        <app-person-table [person]="person1"></app-person-table>
-    </div> -->
-
 </div>
