@@ -2,8 +2,8 @@ export interface Person {
 
     givenName: string;
     surName: string;
-    age: number;
+    age: string;
     email: string;
-    address: string;
+    education: string;
 
 }

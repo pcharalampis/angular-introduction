@@ -13,15 +13,15 @@ export class ComponentInputExampleComponent {
   person0: Person = {
     givenName: 'Charalampis',
     surName: 'Panagiotis',
-    age: 1,
+    age: '00',
     email: 'p.charalampis1@gmail.com',
-    address: 'Athens'
+    education: '_sheep_'
   }
   person1: Person = {
     givenName: 'John',
     surName: 'Doe',
-    age: 37,
+    age: '37',
     email: 'johndoe@gmail.com',
-    address: 'Amsterdam'
+    education: 'All-Knowing'
   }
 }
