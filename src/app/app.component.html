@@ -1,8 +1,29 @@
-<h1>Angular</h1>>
-
-<app-event-bind-example></app-event-bind-example>
 
 
-<app-person-table [person]="person0"></app-person-table>
-<app-person-table></app-person-table>
-<app-person-table [person]="person1"></app-person-table>
+<div class = "container">
+
+    <div class = "d-flex flex-column gap-2">
+        <nav class = "navbar navbar-dark bg-primary justify-content-between">
+            <a role = "button" class = "navbar-brand ms-3" routerLink = "">CF5 - Angular</a>
+        </nav>
+
+        <div class = "d-flex flex-row gap-2">
+            <div class = "d-flex flex-column text-nowrap bg-light p-2">
+                <span role = "button" routerLink = "">Component Input [example]</span>
+                <span role = "button" routerLink = "">{{"for"}} Directive [example]</span>
+                <span role = "button" routerLink = "event-bind-example">Event Binding [example]</span>
+            </div>
+            <div class = "flex-group-1 p-2 text-nowrap">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class = "container">
+        <app-person-table [person]="person0"></app-person-table>
+        <app-person-table></app-person-table>
+        <app-person-table [person]="person1"></app-person-table>
+    </div> -->
+
+</div>
