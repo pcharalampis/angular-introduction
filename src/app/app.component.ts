@@ -1,19 +1,16 @@
 import { Component } from '@angular/core';
 import { PersonTableComponent } from './components/person-table/person-table.component';
 import { Person } from './shared/interfaces/person';
-import { EventBindExampleComponent } from './components/event-bind-example/event-bind-example.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [PersonTableComponent, EventBindExampleComponent],
+  imports: [PersonTableComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-
-  event0;
 
   person0 = {
     givenName: 'Charalampis',
@@ -29,9 +26,7 @@ export class AppComponent {
     email: 'johndoe@gmail.com',
     education: 'All-Knowing'
   }
-  
-  
-users: Person[] = [
+  users: Person[] = [
     {
       givenName: 'Steven',
       surName: 'Bailey',
@@ -732,5 +727,5 @@ users: Person[] = [
       email: 'eric_richard_jackson@yahoo.com',
       education: 'Associate degree',
     }
-];
+  ];
 }
