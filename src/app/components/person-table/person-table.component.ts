@@ -11,4 +11,7 @@ import { Person } from 'src/app/shared/interfaces/person';
 export class PersonTableComponent {
   @Input() person: Person | undefined;
   
+  isPerson() {
+    return this.person && 'education' in this.person;
+  }
 }
